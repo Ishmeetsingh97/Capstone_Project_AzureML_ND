@@ -97,3 +97,6 @@ As the model has peaked it performance by making the Accuracy as 1. There are th
 
 
 * We can tweak the Parameter Sampler to choose different Regularization strength and Max Iteration to reach the current results (Accuracy = 1) even more faster.
+
+
+Video Screenshare Link : https://drive.google.com/file/d/1ngmf6vFjMZrr7IBnk0Cdv3R45R2J0uCh/view?usp=sharing
