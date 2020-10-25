@@ -28,6 +28,14 @@ The AutoML run has the following parameters :
 * *label_column_name*: This is the variable which is predicted by the model. In this project, it is the `iris class`.
 
 * *n_cross_validations*: This is the n in cross validation process. Cross validation is the process where different data points are put into training and testing dataset (resampling) to ensure that the model does not overfit over certain values. In this project the n is `5`.
+
+**Rubric Point: The submission contains a screenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.**
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_1.png)
+
+
+**Rubric Point: The submitted notebook contains code showing the best model being registered and includes a screenshot of the best model with its run id.**
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_2.png)
+
 * **
 ### Hyperdrive parameters and Configurations
 The Hyperdrive run has the following parameters :
@@ -44,6 +52,16 @@ The Hyperdrive run has the following parameters :
 * *policy*: This is the early stopping policy used by Hyperdrive which is used to provide guidance as to how many iterations can be run before the model begins to overfit. In this project, BanditPolicy was used with argument evaluation_interval of `3` and slack_factor of `0.1`. BanditPolciy terminates any run whos primary metrics is less than the slack factor of best run.
 
 * *estimator*: This has the sampled hyperparameters data. In this project, A `SKLearn` estimator is used.
+
+**Rubric Point: The submission contains a screenshot of the RunDetails widget that shows the progress of the training runs of the different experiments.**
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_3.png)
+
+
+**Rubric Point: The submission includes a screenshot of the best model with its run id and the different hyperparameters that were tuned. The submitted notebook also contains code showing the best model being registered.**
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_4.png)
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_5.png)
+
+
 * **
 
 ###  Comparison of the Two Models
@@ -61,13 +79,16 @@ To access the deployed endpoint we need 4 files, their purpose is explained belo
 
 [!alt text] (required_screenshot_4.png)
 
-* *serve.py* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project): This script basically exposes the swagger.json file which over the localhost server.
+* *serve.py* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project which I have completed earlier): This script basically exposes the swagger.json file which over the localhost server.
 
-* *Endpoint.py* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project):
+* *Endpoint.py* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project which I have completed earlier):
 This script basically helps to send a HTTP Post request to the generated endpoint.
 
-* *swagger.sh* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project):
+* *swagger.sh* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project which I have completed earlier):
 This file basically helps to run swagger in docker container on the local machine.
+
+**Rubric Point: The submission contains a screenshot showing the model endpoint as Healthy.**
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_6.png)
 
 
 ### Model Improvement
