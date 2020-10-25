@@ -73,11 +73,11 @@ To access the deployed endpoint we need 4 files, their purpose is explained belo
 
 * *swagger.json*: This is the file is to be downloaded from `Swagger URI` placeholder from the deployment page of the specfic deployment in the Azure ML Studio. This is the file which contains all the specifications of the API for the Swagger to run. Screenshot attached for reference.
 
-[!alt text] (required_screenshot_4.png)
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_7.png)
 
 * *config.json*: This file is to be downloaded from Azure ML Studio by clicking on the upper right corner on the `` icon. This is the file which contains the credentails which allow the user to authenticate to the Azure ML Studio. Screenshot attached for reference.
 
-[!alt text] (required_screenshot_4.png)
+![alt text](https://github.com/Ishmeetsingh97/Capstone_Project_AzureML_ND/blob/master/screenshots/required_screenshot_8.png)
 
 * *serve.py* (Taken from Udacity's Starter code for the Operationalizing Machine Learning project which I have completed earlier): This script basically exposes the swagger.json file which over the localhost server.
 
